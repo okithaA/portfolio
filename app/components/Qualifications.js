@@ -11,9 +11,9 @@ export default function Qualifications() {
 
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-      <h1 className="text-6xl font-sans font-light p-8 mb-4">Qualifications</h1>
+      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">Qualifications</h1>
 
-      <p className="p-4 font-mono max-w-3xl">
+      <p className="p-4 font-mono max-w-3xl text-black">
         Below are a few certificates and documents showcasing coursework and achievements. Click any item to open the PDF in a new tab.
       </p>
 
