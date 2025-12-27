@@ -5,10 +5,9 @@ import Navbar from "../components/Navbar";
 export default function TermsPage() {
 	return (
 		<div>
-			<Navbar />
 			<main className="container max-w-4xl mx-auto py-12 px-6">
-				<h1 className="text-4xl font-bold text-slate-900 mb-4">Terms of Service</h1>
-				<p className="text-slate-600 mb-8">
+				<h1 className="text-4xl font-bold text-white mb-4">Terms of Service</h1>
+				<p className="text-white mb-8">
 					By accessing or using this website, you agree to comply with the following Terms of Service.
 				</p>
 
