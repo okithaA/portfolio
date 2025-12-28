@@ -6,7 +6,7 @@ import Qualifications from "./components/Qualifications";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Header />
       <main className="container">
         <section id="about" className="mt-8">
