@@ -20,7 +20,7 @@ export default function Header() {
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white">
             Okitha Hettiarachchi
           </h1>
-          <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">Full-Stack Developer</p>
+          <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">Student Developer</p>
 
           <p className="text-slate-300 max-w-lg leading-relaxed mb-8 text-lg">
             I craft accessible, performant web applications with meticulous attention to design and user experience. Specialized in React, Next.js, and modern JavaScript.
