@@ -2,10 +2,21 @@ import React from 'react'
 
 export default function Qualifications() {
   const certs = [
-    { title: 'Front-End Web Development E-Certificate' },
-    { title: 'Web Design for Beginners E-Certificate' },
-    { title: 'Python for Beginners E-Certificate' },
-    { title: 'Web development Certificate' },
+    { title: 'Front-End Web Development E-Certificate',
+      issuedBy : 'Department of Information Technology, Faculty of Information Technology, University of Moratuwa'
+    },
+    { title: 'Web Design for Beginners E-Certificate',
+      issuedBy : 'Department of Information Technology, Faculty of Information Technology, University of Moratuwa '
+    },
+    { title: 'Python for Beginners E-Certificate',
+      issuedBy : 'Department of Information Technology, Faculty of Information Technology, University of Moratuwa'
+    },
+    { title: 'Web development Certificate',
+      issuedBy : 'Viduhala.lk'
+    },
+    { title: 'Python Essentials 1 E-Certificate',
+      issuedBy : 'Networking Academy through the Cisco Networking Academy'
+    }
   ]
 
   return (
@@ -23,6 +34,7 @@ export default function Qualifications() {
             className="block bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-lg p-4 shadow-sm text-slate-800 transition-colors"
           >
             <h3 className="text-lg font-semibold">{c.title}</h3>
+            <p className="text-sm mt-1">{c.issuedBy}</p>
           </div>
         ))}
       </div>
