@@ -36,13 +36,11 @@ export default function Project() {
             Below are a few projects. 
           </p>
     
-          <div className="max-w-3xl p-4 grid gap-4">
+          <div className="max-w-3xl p-4 grid gap-4"   >
             {projects.map((item) => (
-              <Link 
-                href={item.link}
-                className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
+              <Link href={item.link} className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
-                {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}<span>
+                {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}</span>
                 </h3>
                 <p className="text-sm text-gray-600 text-center">
                 {item.description}
@@ -52,7 +50,7 @@ export default function Project() {
                 </p>
               </Link>
             ))}
-        </div>
+          </div>
     </div>
   )
 }
