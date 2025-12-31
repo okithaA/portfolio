@@ -16,6 +16,9 @@ export default function Qualifications() {
     },
     { title: 'Python Essentials 1 E-Certificate',
       issuedBy : 'Networking Academy through the Cisco Networking Academy'
+    },
+    { title: 'Introduction to modern AI E-Certificate',
+      issuedBy : 'Networking Academy through the Cisco Networking Academy'
     }
   ]
 
