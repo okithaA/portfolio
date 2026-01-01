@@ -37,10 +37,11 @@ export default function Project() {
           </p>
     
           <div className="max-w-3xl p-4 grid gap-4"   >
-            {projects.map((item) => (
-              <Link href={item.link} className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
+            {projects.map(item => {
+            const card = (
+              <div className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
-                {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}</span>
+                  {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}</span>
                 </h3>
                 <p className="text-sm text-gray-600 text-center">
                 {item.description}
@@ -48,8 +49,13 @@ export default function Project() {
                 <p className="text-sm text-gray-600 text-center">
                 {item.tech}
                 </p>
-              </Link>
-            ))}
+              </div>
+            )
+            if (!item.link) return <div key={item.id}>{card}</div>
+            return String(item.link).startsWith('http')
+            ? <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer">{card}</a>
+            : <Link key={item.id} href={item.link}>{card}</Link>
+          })}
           </div>
     </div>
   )
