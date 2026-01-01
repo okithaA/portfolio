@@ -2,6 +2,7 @@ import About from "./components/About";
 import ComIntro from "./components/ComIntro";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Project from "./components/Project";
 import Qualifications from "./components/Qualifications";
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
         </section>
         <section className="mt-8">
            <ComIntro />
+        </section>
+        <section id='projects' className="mt-8">
+          <Project />
         </section>
         <section id='qualifications' className="mt-8">
           <Qualifications />
