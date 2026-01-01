@@ -16,9 +16,9 @@ export default function Home() {
         <section className="mt-8">
            <ComIntro />
         </section>
-        <section id='projects' className="mt-8">
+        {/*<section id='projects' className="mt-8">
           <Project />
-        </section>
+        </section>*/}
         <section id='qualifications' className="mt-8">
           <Qualifications />
         </section>
