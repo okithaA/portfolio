@@ -39,7 +39,7 @@ export default function Project() {
           <div className="max-w-3xl p-4 grid gap-4"   >
             {projects.map(item => {
             const card = (
-              <div className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
+              <div className="flex justify-center bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
                   {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}</span>
                 </h3>
