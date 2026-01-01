@@ -10,14 +10,14 @@ export default function Home() {
     <div className="bg-white">
       <Header />
       <main className="container">
+      <section id='projects' className="mt-8">
+          <Project />
+        </section>
         <section id="about" className="mt-8">
           <About />
         </section>
         <section className="mt-8">
            <ComIntro />
-        </section>
-        <section id='projects' className="mt-8">
-          <Project />
         </section>
         <section id='qualifications' className="mt-8">
           <Qualifications />
