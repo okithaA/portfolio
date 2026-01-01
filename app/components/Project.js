@@ -36,7 +36,7 @@ export default function Project() {
             Below are a few projects. 
           </p>
     
-          <div className="max-w-3xl p-4 grid gap-4"   >
+          <div className="max-w-3xl p-4 flex flex-wrap gap-4">
             {projects.map(item => {
             const card = (
               <div className="flex bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
