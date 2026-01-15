@@ -59,7 +59,6 @@ export default function Project() {
         const DraggableCard = (
           <motion.div
             drag
-            dragMomentum={false}
             dragElastic={0.2}
             whileHover={{ scale: 1.05 }}
             whileDrag={{ scale: 1.1 }}
