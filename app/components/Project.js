@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
-//import { motion } from 'motion/react'
+import { motion } from 'motion/react'
 
 export default function Project() {
     const projects = [
@@ -41,24 +41,53 @@ export default function Project() {
 
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">
             {projects.map(item => {
-            const card = (
-              <div className=" bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
-                  {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}</span>
-                </h3>
-                <p className="text-sm text-gray-600 text-center">
-                {item.description}
-                </p>
-                <p className="text-sm text-gray-600 text-center">
-                {item.tech}
-                </p>
-              </div>
-            )
-            if (!item.link) return <div key={item.id}>{card}</div>
-            return String(item.link).startsWith('http')
-            ? <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer">{card}</a>
-            : <Link key={item.id} href={item.link}>{card}</Link>
-          })}
+        const CardContent = (
+          <div className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
+              {item.title}
+              <span className="ml-1">{item.label}</span>
+            </h3>
+            <p className="text-sm text-gray-600 text-center">
+              {item.description}
+            </p>
+            <p className="text-sm text-gray-600 text-center">
+              {item.tech}
+            </p>
+          </div>
+        )
+
+        const DraggableCard = (
+          <motion.div
+            drag
+            dragMomentum={false}
+            dragElastic={0.2}
+            whileHover={{ scale: 1.05 }}
+            whileDrag={{ scale: 1.1 }}
+            className="cursor-grab active:cursor-grabbing"
+          >
+            {CardContent}
+          </motion.div>
+        )
+
+        if (!item.link) {
+          return <div key={item.id}>{DraggableCard}</div>
+        }
+
+        return String(item.link).startsWith('http') ? (
+          <a
+            key={item.id}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {DraggableCard}
+          </a>
+        ) : (
+          <Link key={item.id} href={item.link}>
+            {DraggableCard}
+          </Link>
+        )
+      })}
           </div>
     </div>
   )
