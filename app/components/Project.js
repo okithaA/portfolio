@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'motion/react'
+//import { motion } from 'motion/react'
 
 export default function Project() {
     const projects = [
@@ -42,7 +42,6 @@ export default function Project() {
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">
             {projects.map(item => {
             const card = (
-              <motion.div drag>
               <div className=" bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm transition-transform duration-200 hover:scale-105">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
                   {item.title}<span className="text-lg font-semibold text-gray-900 mb-2 text-center">{item.label}</span>
@@ -54,7 +53,6 @@ export default function Project() {
                 {item.tech}
                 </p>
               </div>
-              </motion.div>
             )
             if (!item.link) return <div key={item.id}>{card}</div>
             return String(item.link).startsWith('http')

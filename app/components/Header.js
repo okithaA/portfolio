@@ -3,7 +3,7 @@
 import Image from "next/image"
 import React from 'react'
 import Link from "next/link";
-import { motion } from 'motion/react'
+//import { motion } from 'motion/react'
 
 export default function Header() {
   return (
@@ -30,11 +30,6 @@ export default function Header() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            style={box}
-            >
             <Link
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/50" 
               href="/resume.pdf" 
@@ -43,19 +38,12 @@ export default function Header() {
             >
               Download Resume
             </Link>
-            </motion.div>
-            <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            style={box}
-            >
             <Link
               className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-600 transition-all duration-300" 
               href="/contacts"
             >
               Get In Touch
             </Link>
-            </motion.div>
           </div>
         </div>
 
