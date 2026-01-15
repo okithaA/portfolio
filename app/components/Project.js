@@ -53,8 +53,7 @@ export default function Project() {
           </div>
         )
 
-        return (
-          {!item.link ? (
+        {!item.link ? (
               Card
             ) : String(item.link).startsWith('http') ? (
               <a
@@ -70,7 +69,6 @@ export default function Project() {
                 {Card}
               </Link>
             )}
-        )
       })}
           </div>
     </div>
