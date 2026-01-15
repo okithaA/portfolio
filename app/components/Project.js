@@ -57,20 +57,7 @@ export default function Project() {
         )
 
         return (
-          <motion.div
-            key={item.id}
-            drag
-            dragElastic={0.2}
-            dragMomentum={false}
-            whileHover={{ scale: 1.05 }}
-            whileDrag={{ scale: 1.1 }}
-            onDragEnd={(e, info) => {
-            if (Math.abs(info.offset.x) > 5 || Math.abs(info.offset.y) > 5) {
-            e.preventDefault()
-           }}}
-            className="cursor-grab active:cursor-grabbing"
-          >
-            {!item.link ? (
+          {!item.link ? (
               Card
             ) : String(item.link).startsWith('http') ? (
               <a
@@ -86,7 +73,6 @@ export default function Project() {
                 {Card}
               </Link>
             )}
-          </motion.div>
         )
       })}
           </div>
