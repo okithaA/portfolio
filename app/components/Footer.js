@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-slate-400">
-              Full-Stack Developer crafting accessible and performant web applications.
+              Student Developer crafting accessible and performant web applications.
             </p>
           </div>
 
