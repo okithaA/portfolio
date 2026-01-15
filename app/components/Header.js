@@ -35,8 +35,7 @@ export default function Header() {
             download
             aria-label="Download resume"
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg
-               transition-transform duration-300 shadow-lg hover:shadow-blue-500/50
-               hover:scale-110"
+               transition-transform duration-300 shadow-lg hover:scale-110"
           >
           Download Resume
           </Link>
