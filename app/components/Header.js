@@ -30,21 +30,26 @@ export default function Header() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/50" 
-              href="/resume.pdf" 
-              download 
-              aria-label="Download resume"
-            >
-              Download Resume
-            </Link>
-            <Link
-              className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-600 transition-all duration-300" 
-              href="/contacts"
-            >
-              Get In Touch
-            </Link>
-          </div>
+          <Link
+            href="/resume.pdf"
+            download
+            aria-label="Download resume"
+            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg
+               transition-transform duration-300 shadow-lg hover:shadow-blue-500/50
+               hover:scale-110"
+          >
+          Download Resume
+          </Link>
+
+          <Link
+            href="/contacts"
+            className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg
+               border border-slate-600 transition-transform duration-300
+               hover:scale-110"
+          >
+          Get In Touch
+         </Link>
+        </div>
         </div>
 
         {/* Right - Avatar */}
