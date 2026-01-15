@@ -64,6 +64,10 @@ export default function Project() {
             dragMomentum={false}
             whileHover={{ scale: 1.05 }}
             whileDrag={{ scale: 1.1 }}
+            onDragEnd={(e, info) => {
+            if (Math.abs(info.offset.x) > 5 || Math.abs(info.offset.y) > 5) {
+            e.preventDefault()
+           }}}
             className="cursor-grab active:cursor-grabbing"
           >
             {!item.link ? (
