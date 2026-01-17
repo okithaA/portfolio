@@ -37,40 +37,48 @@ export default function Project() {
           </p>
 
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">
-            {projects.map(item => (
-           const Card = (
-          <div className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
-              {item.title}
-              <span className="ml-1">{item.label}</span>
-            </h3>
-            <p className="text-sm text-gray-600 text-center">
-              {item.description}
-            </p>
-            <p className="text-sm text-gray-600 text-center">
-              {item.tech}
-            </p>
-          </div>
-        )
+  {projects.map((item) => {
+    const Card = (
+      <div className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm">
+        <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
+          {item.title}
+          <span className="ml-1">{item.label}</span>
+        </h3>
+        <p className="text-sm text-gray-600 text-center">
+          {item.description}
+        </p>
+        <p className="text-sm text-gray-600 text-center">
+          {item.tech}
+        </p>
+      </div>
+    );
 
-        {!item.link ? (
-              Card
-            ) : String(item.link).startsWith('http') ? (
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                {Card}
-              </a>
-            ) : (
-              <Link href={item.link} className="block">
-                {Card}
-              </Link>
-            )}
-      ))}
-          </div>
+    if (!item.link) {
+      return <div key={item.id}>{Card}</div>;
+    }
+
+    if (String(item.link).startsWith("http")) {
+      return (
+        <a
+          key={item.id}
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          {Card}
+        </a>
+      );
+    }
+
+    return (
+      <Link key={index} href={item.link} className="block">
+        {Card}
+      </Link>
+    );
+  })}
+</div>
+
     </div>
   )
 }
