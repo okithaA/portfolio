@@ -72,12 +72,13 @@ export default function Project() {
     }
 
     return (
-      <Link key={index} href={item.link} className="block">
+      <Link key={item.id} href={item.link} className="block">
         {Card}
       </Link>
     );
   })}
 </div>
+
 
     </div>
   )

@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       <main className="container">
       <section id='projects' className="mt-8">
-          {/*<Project />*/}
+          <Project />
         </section>
         <section id="about" className="mt-8">
           <About />
