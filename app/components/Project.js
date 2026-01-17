@@ -37,8 +37,8 @@ export default function Project() {
           </p>
 
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">
-            {projects.map(item => {
-        const Card = (
+            {projects.map(item => (
+           const Card = (
           <div className="bg-white border border-gray-200 rounded-xl p-6 w-full sm:w-64 shadow-sm">
             <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
               {item.title}
@@ -69,7 +69,7 @@ export default function Project() {
                 {Card}
               </Link>
             )}
-      })}
+      ))}
           </div>
     </div>
   )

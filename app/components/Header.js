@@ -23,7 +23,7 @@ export default function Header() {
           <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">Student Developer</p>
 
           <p className="text-slate-300 max-w-lg leading-relaxed mb-8 text-lg">
-            I craft accessible, performant web applications with meticulous attention to design and user experience. Specialized in React, Next.js, and modern JavaScript.
+            I craft accessible, performant web applications with meticulous attention to design and user experience. Mainly using React, Next.js, and modern JavaScript.
           </p>
 
           <div className="flex flex-wrap gap-4">
