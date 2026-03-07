@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <main className="min-h-screen relative bg-black flex items-center justify-center px-6">
       {/* Subtle gradient accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-black to-black opacity-90" />
+      <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-black to-black opacity-90" />
       
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl -z-10" />
@@ -54,7 +54,7 @@ export default function Header() {
         {/* Right - Avatar */}
         <div className="flex justify-center md:justify-end px-4 md:px-0">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl blur-2xl" />
+            <div className="absolute inset-0 bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-2xl blur-2xl" />
             <div className="relative bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-2xl">
               <Image 
                 src="/Image.jpeg" 
