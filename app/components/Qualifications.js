@@ -1,33 +1,36 @@
 import React from 'react'
+import { useTranslations } from 'next-intl';
 
 export default function Qualifications() {
+  const t = useTranslations('qualifications');
+
   const certs = [
-    { title: 'Front-End Web Development E-Certificate',
-      issuedBy : 'Department of Information Technology, Faculty of Information Technology, University of Moratuwa'
+    { title: t('certificates.frontend.title'),
+      issuedBy : t('certificates.frontend.issuer')
     },
-    { title: 'Web Design for Beginners E-Certificate',
-      issuedBy : 'Department of Information Technology, Faculty of Information Technology, University of Moratuwa '
+    { title: t('certificates.webdesign.title'),
+      issuedBy : t('certificates.webdesign.issuer')
     },
-    { title: 'Python for Beginners E-Certificate',
-      issuedBy : 'Department of Information Technology, Faculty of Information Technology, University of Moratuwa'
+    { title: t('certificates.python.title'),
+      issuedBy : t('certificates.python.issuer')
     },
-    { title: 'Web development Certificate',
-      issuedBy : 'Viduhala.lk'
+    { title: t('certificates.webdev.title'),
+      issuedBy : t('certificates.webdev.issuer')
     },
-    { title: 'Python Essentials 1 E-Certificate',
-      issuedBy : 'Networking Academy through the Cisco Networking Academy'
+    { title: t('certificates.pythonEssentials.title'),
+      issuedBy : t('certificates.pythonEssentials.issuer')
     },
-    { title: 'Introduction to modern AI E-Certificate',
-      issuedBy : 'Networking Academy through the Cisco Networking Academy'
+    { title: t('certificates.aiIntro.title'),
+      issuedBy : t('certificates.aiIntro.issuer')
     }
   ]
 
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">Qualifications</h1>
+      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('title')}</h1>
 
       <p className="p-4 font-mono max-w-3xl text-black">
-        Below are a few certificates and documents showcasing coursework and achievements. 
+        {t('subtitle')}
       </p>
 
       <div className="max-w-3xl p-4 grid gap-4">

@@ -1,0 +1,116 @@
+{
+  "header": {
+    "welcome": "Welcome",
+    "name": "Okitha Hettiarachchi",
+    "title": "Junior Developer",
+    "description": "I craft accessible, performant web applications with meticulous attention to design and user experience. Mainly using React, Next.js, and modern JavaScript.",
+    "downloadResume": "Download Resume",
+    "getInTouch": "Get In Touch"
+  },
+  "about": {
+    "title": "About me",
+    "description": "I am a motivated and detail-oriented student from Sri Lanka with a strong interest in programming, web development, and software engineering. I have studied at St. Joseph's College, Colombo 10, as well as Yoga Elementary School and Yoga Junior High School in Tokyo, Japan. Currently, I am attending Toda Higashi Junior High School in Saitama prefecture in Japan. I am particularly passionate about building websites and expanding my technical skill set. Being multilingual, with proficiency in English, Sinhala, and Japanese, allows me to communicate effectively in diverse environments. I am eager to further develop my skills in Python programming and pursue CCNA certification as I continue to grow in the field of technology."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Below are a few projects.",
+    "items": {
+      "portfolio": {
+        "title": "Portfolio website",
+        "description": "Built a personal portfolio using Next.js to present projects, learning progress, and long-term goals. Focused on clean structure, performance and accessibility.",
+        "tech": "Next.js, React, Tailwind CSS"
+      },
+      "doalm7": {
+        "title": "DOALM7 Insight Platform (In progress)",
+        "description": "Designing a structured web platform where authenticated users can submit, review, and refine ideas under defined ethical and governance constraints.",
+        "tech": "Next.js (Planned: Authentication (Redux), Database (Firebase, MongoDB))"
+      },
+      "christmas": {
+        "title": "Is it Christmas?",
+        "description": "A small experimental web app that checks the current date and displays a dynamic response. Built as a logic and deployment exercise.",
+        "tech": "Express.js, Node.js, EJS, JavaScript, Vercel",
+        "label": "experimental"
+      }
+    }
+  },
+  "qualifications": {
+    "title": "Qualifications",
+    "subtitle": "Below are a few certificates and documents showcasing coursework and achievements.",
+    "certificates": {
+      "frontend": {
+        "title": "Front-End Web Development E-Certificate",
+        "issuer": "Department of Information Technology, Faculty of Information Technology, University of Moratuwa"
+      },
+      "webdesign": {
+        "title": "Web Design for Beginners E-Certificate",
+        "issuer": "Department of Information Technology, Faculty of Information Technology, University of Moratuwa"
+      },
+      "python": {
+        "title": "Python for Beginners E-Certificate",
+        "issuer": "Department of Information Technology, Faculty of Information Technology, University of Moratuwa"
+      },
+      "webdev": {
+        "title": "Web development Certificate",
+        "issuer": "Viduhala.lk"
+      },
+      "pythonEssentials": {
+        "title": "Python Essentials 1 E-Certificate",
+        "issuer": "Networking Academy through the Cisco Networking Academy"
+      },
+      "aiIntro": {
+        "title": "Introduction to modern AI E-Certificate",
+        "issuer": "Networking Academy through the Cisco Networking Academy"
+      }
+    }
+  },
+  "comintro": {
+    "title": "What is",
+    "brand": "DOALM7?",
+    "description": "DOALM 7 is a technology company that I aspire to establish in the future. I am highly ambitious and believe in achieving success through teamwork rather than individual accomplishment. Although DOALM 7 is still in its conceptual stage, my goal is to develop it into a successful and impactful technology-driven organization. The name DOALM 7 carries a deeper meaning. The number seven symbolizes completeness, a concept rooted in biblical tradition. This represents my vision for the company—to build solutions that are complete, efficient, and meaningful. Through DOALM 7, I aim to contribute positively to the technology sector while fostering collaboration, innovation, and excellence."
+  },
+  "footer": {
+    "description": "Student Developer crafting accessible and performant web applications.",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "qualifications": "Qualifications",
+    "contact": "Contact",
+    "follow": "Follow",
+    "copyright": "© {year} Okitha Hettiarachchi. All rights reserved.",
+    "terms": "Terms of Service"
+  },
+  "contact": {
+    "getInTouch": "Get In Touch",
+    "title": "Let's Connect",
+    "subtitle": "Feel free to reach out for collaborations or just a friendly hello!",
+    "email": "Email",
+    "connectWithMe": "Connect With Me",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "backToHome": "← Back to Home"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "intro": "By accessing or using this website, you agree to comply with the following Terms of Service.",
+    "sections": {
+      "use": {
+        "title": "Use of Website Resources",
+        "description": "All resources, content, and materials available on this website are owned by and intended for the exclusive use of the website owner. These resources may not be copied, shared, distributed, or disclosed to any third party without prior written permission from the user, as this website is based on an individual."
+      },
+      "privacy": {
+        "title": "Privacy and Confidentiality",
+        "description": "User privacy must be strictly respected and maintained. Any unauthorized use, disclosure, or violation of privacy will be considered a breach of these Terms of Service. In such cases, the website owner reserves the right to take appropriate action as permitted under applicable laws."
+      },
+      "enforcement": {
+        "title": "Enforcement of Terms",
+        "description": "Failure to comply with these Terms of Service may result in restricted access, termination of use, or other actions deemed necessary by the website owner to protect their rights and privacy."
+      }
+    },
+    "lastUpdated": "Last updated December 27, 2025.",
+    "contactLink": "the contact page"
+  },
+  "languageSwitcher": {
+    "english": "English",
+    "japanese": "日本語",
+    "sinhala": "සිංහල"
+  }
+}

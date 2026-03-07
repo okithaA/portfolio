@@ -1,39 +1,42 @@
 import React from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl';
 
 export default function Project() {
+    const t = useTranslations('projects');
+
     const projects = [
         {
             id: 1,
-            title: 'Portfolio website',
-            description: 'Built a personal portfolio using Next.js to present projects, learning progress , and long-term goals. Focused on clean structure, performance and accessibility.',
-            tech: 'Next.js, React, Tailwind CSS',
+            title: t('items.portfolio.title'),
+            description: t('items.portfolio.description'),
+            tech: t('items.portfolio.tech'),
             label: null,
             link : '/'
         },
         {
             id: 2,
-            title: 'DOALM7 Insight Platform (In progress)',
-            description: 'Designing a structured web platform where authenticated users can submit ,review, and refine ideas under defined ethical and governance constraints.',
-            tech: 'Next.js (Planned: Authentication (Redux), Database (Firebase, MongoDB))',
+            title: t('items.doalm7.title'),
+            description: t('items.doalm7.description'),
+            tech: t('items.doalm7.tech'),
             label: null,
             link : null
         }, 
         {
             id: 3,
-            title: 'Is it Christmas ?',
-            description: 'A small experimental web app that cecks the current date and displays a dynamic response. Built as a logic and deployment exercise.',
-            tech: 'Express.js, Node.js, EJS, JavaScript, Vercel',
-            label: 'experimental',
+            title: t('items.christmas.title'),
+            description: t('items.christmas.description'),
+            tech: t('items.christmas.tech'),
+            label: t('items.christmas.label'),
             link : 'https://isitchristmas-eight.vercel.app/'
         },
     ]
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-          <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">Projects</h1>
+          <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('title')}</h1>
     
           <p className="p-4 font-mono max-w-3xl text-black">
-            Below are a few projects. 
+            {t('subtitle')}
           </p>
 
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">
