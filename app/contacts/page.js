@@ -15,12 +15,12 @@ export default function ContactPage() {
       <div className="max-w-2xl w-full relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4 font-semibold">{t('getInTouch')}</p>
+          <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-4 font-semibold">{t('Get in Touch')}</p>
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-white">
-            {t('title')}
+            {t("Let's Connect!")}
           </h1>
           <p className="text-xl text-slate-300 max-w-lg mx-auto">
-            {t('subtitle')}
+            {t('Feel free to reach out for collaborations, or just to say hi!')}
           </p>
         </div>
 

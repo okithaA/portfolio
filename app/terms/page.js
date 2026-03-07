@@ -1,13 +1,12 @@
 import Footer from "../components/Footer";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 import { useTranslations } from 'next-intl';
 
 export default function TermsPage() {
 	const t = useTranslations('terms');
 
 	return (
-		<div>
+		<div className="min-h-screen bg-black text-white">
 			<main className="container max-w-4xl mx-auto py-12 px-6">
 				<h1 className="text-4xl font-bold text-white mb-4">{t('title')}</h1>
 				<p className="text-white mb-8">

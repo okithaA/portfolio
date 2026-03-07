@@ -21,12 +21,12 @@ export default function Header() {
         <div className="text-white px-4 md:px-0">
           <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-6 font-semibold">{t('welcome')}</p>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white">
-            {t('name')}
+            {t('Okitha Hettiarachchi')}
           </h1>
-          <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">{t('title')}</p>
+          <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">{t('Juniour Developer')}</p>
 
           <p className="text-slate-300 max-w-lg leading-relaxed mb-8 text-lg">
-            {t('description')}
+            {t('I craft accessible, performant web applications with meticulous attention to design and user experience. Mainly using React, Next.js, and modern JavaScript.')}
           </p>
 
           <div className="flex flex-wrap gap-4">

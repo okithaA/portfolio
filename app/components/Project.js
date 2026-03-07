@@ -33,10 +33,10 @@ export default function Project() {
     ]
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-          <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('title')}</h1>
+          <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('Projects')}</h1>
     
           <p className="p-4 font-mono max-w-3xl text-black">
-            {t('subtitle')}
+            {t('Below are a few projects')}
           </p>
 
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">

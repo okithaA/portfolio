@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-slate-400">
-              {t('description')}
+              {t('Student Developer crafting accessible and performant web applications.')}
             </p>
           </div>
 

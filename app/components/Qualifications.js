@@ -27,10 +27,10 @@ export default function Qualifications() {
 
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('title')}</h1>
+      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('Qualifications')}</h1>
 
       <p className="p-4 font-mono max-w-3xl text-black">
-        {t('subtitle')}
+        {t('Below are some of the certifications I have obtained, showcasing my commitment to continuous learning and professional development in the field of technology.')}
       </p>
 
       <div className="max-w-3xl p-4 grid gap-4">

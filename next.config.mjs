@@ -3,7 +3,7 @@ const nextConfig = {
   /* config options here */
   reactCompiler: true,
   experimental: {
-    serverComponentsExternalPackages: ['next-intl']
+    serverExternalPackages: ['next-intl']
   }
 };
 
