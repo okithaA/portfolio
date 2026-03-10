@@ -30,17 +30,17 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <Link href="#about" className="hover:text-blue-400 transition-colors duration-300">
-                  about'
+                  About
                 </Link>
               </li>
               <li>
                 <Link href="#qualifications" className="hover:text-blue-400 transition-colors duration-300">
-                  qualifications
+                  Qualifications
                 </Link>
               </li>
               <li>
                 <Link href="/contacts" className="hover:text-blue-400 transition-colors duration-300">
-                  contact
+                  Contact
                 </Link>
               </li>
             </ul>
