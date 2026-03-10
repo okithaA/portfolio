@@ -26,11 +26,11 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col items-start md:items-center">
-            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">{t('quickLinks')}</h3>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">Quick Links</h3>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <Link href="#about" className="hover:text-blue-400 transition-colors duration-300">
-                  about'
+                  about
                 </Link>
               </li>
               <li>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col items-start md:items-end">
-            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">{t('follow')}</h3>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">Follow</h3>
             <div className="flex gap-4">
               <Link 
                 href="https://github.com" 

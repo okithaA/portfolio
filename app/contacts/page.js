@@ -65,7 +65,7 @@ export default function ContactPage() {
             href="/"
             className="text-slate-400 hover:text-white transition-colors duration-300"
           >
-            {t('backToHome')}
+            Back to home
           </Link>
         </div>
       </div>
