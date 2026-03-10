@@ -45,7 +45,6 @@ export default function TermsPage() {
 					<Link href="/contacts" className="text-blue-500 hover:underline">
 						http://okitha.al@gmail.com
 					</Link>
-					.
 				</p>
 			</main>
 			<Footer />
