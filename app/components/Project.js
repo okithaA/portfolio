@@ -1,42 +1,40 @@
 import React from 'react'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl';
 
 export default function Project() {
-    const t = useTranslations('projects');
 
     const projects = [
         {
             id: 1,
-            title: t('items.portfolio.title'),
-            description: t('items.portfolio.description'),
-            tech: t('items.portfolio.tech'),
+            title: 'Portfolio Website',
+            description: 'A personal portfolio showcasing my work and skills.',
+            tech: 'Next.js, React, Tailwind CSS',
             label: null,
             link : '/'
         },
         {
             id: 2,
-            title: t('items.doalm7.title'),
-            description: t('items.doalm7.description'),
-            tech: t('items.doalm7.tech'),
+            title: 'DOALM7 Idea Platform',
+            description: "Designing a structured web platform where authenticated users can submit ,review, and refine ideas under defined ethical and governance constraints.",
+            tech: 'Node.js, Express, MongoDB',
             label: null,
             link : null
         }, 
         {
             id: 3,
-            title: t('items.christmas.title'),
-            description: t('items.christmas.description'),
-            tech: t('items.christmas.tech'),
-            label: t('items.christmas.label'),
+            title: 'Is It Christmas?',
+            description: 'A playful web app that tells you whether it is Christmas based on the current date.',
+            tech: 'JavaScript, Vercel',
+            label: 'Demo',
             link : 'https://isitchristmas-eight.vercel.app/'
         },
     ]
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-          <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('Projects')}</h1>
+          <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">Projects</h1>
     
           <p className="p-4 font-mono max-w-3xl text-black">
-            {t('Below are a few projects')}
+            Below are a few projects
           </p>
 
           <div className="max-w-3xl p-4 flex flex-wrap justify-center items-center gap-2">

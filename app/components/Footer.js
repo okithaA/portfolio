@@ -2,10 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import logo from '../../public/LOGO_NEW.png'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl';
 
 export default function Footer() {
-  const t = useTranslations('footer');
   const currentYear = new Date().getFullYear()
 
   return (
@@ -23,7 +21,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-slate-400">
-              {t('Student Developer crafting accessible and performant web applications.')}
+              Student Developer crafting accessible and performant web applications.
             </p>
           </div>
 
@@ -32,17 +30,17 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <Link href="#about" className="hover:text-blue-400 transition-colors duration-300">
-                  {t('about')}
+                  about'
                 </Link>
               </li>
               <li>
                 <Link href="#qualifications" className="hover:text-blue-400 transition-colors duration-300">
-                  {t('qualifications')}
+                  qualifications
                 </Link>
               </li>
               <li>
                 <Link href="/contacts" className="hover:text-blue-400 transition-colors duration-300">
-                  {t('contact')}
+                  contact
                 </Link>
               </li>
             </ul>
@@ -75,10 +73,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 py-8 flex flex-col sm:flex-row items-center justify-between text-sm text-slate-400">
-          <p>{t('copyright', { year: currentYear })}</p>
+          <p>copyright &copy; {currentYear} DOALM7. All rights reserved.</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
             <Link href="/terms" className="hover:text-white transition-colors duration-300">
-              {t('terms')}
+              Terms
             </Link>
           </div>
         </div>

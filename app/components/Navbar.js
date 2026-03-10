@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import logo from '../../public/LOGO_NEW.png'
 import Link from 'next/link'
-import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navbar() {
   return (
@@ -27,7 +26,6 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
-      <LanguageSwitcher />
     </div>
   </div>
 </header>

@@ -1,51 +1,49 @@
 import Footer from "../components/Footer";
 import Link from "next/link";
-import { useTranslations } from 'next-intl';
 
 export default function TermsPage() {
-	const t = useTranslations('terms');
 
 	return (
 		<div className="min-h-screen bg-black text-white">
 			<main className="container max-w-4xl mx-auto py-12 px-6">
-				<h1 className="text-4xl font-bold text-white mb-4">{t('title')}</h1>
+				<h1 className="text-4xl font-bold text-white mb-4">Terms and Conditions</h1>
 				<p className="text-white mb-8">
-					{t('intro')}
+					These terms govern your use of the site. Please read them carefully.
 				</p>
 
 				<ol className="list-decimal list-inside space-y-8">
 					<li>
 						<h2 className="text-2xl font-semibold text-white mb-2">
-							{t('sections.use.title')}
+							Use of the Website
 						</h2>
 						<p className="text-white">
-							{t('sections.use.description')}
+							By accessing this website you agree not to misuse it.
 						</p>
 					</li>
 
 					<li>
 						<h2 className="text-2xl font-semibold text-white mb-2">
-							{t('sections.privacy.title')}
+							Privacy Policy
 						</h2>
 						<p className="text-white">
-							{t('sections.privacy.description')}
+							Any personal information collected will be handled in accordance with our privacy practices.
 						</p>
 					</li>
 
 					<li>
 						<h2 className="text-2xl font-semibold text-white mb-2">
-							{t('sections.enforcement.title')}
+							Enforcement
 						</h2>
 						<p className="text-white">
-							{t('sections.enforcement.description')}
+							Violations of these terms may result in termination of access.
 						</p>
 					</li>
 				</ol>
 
 				<p className="text-sm text-white mt-8">
-					{t('lastUpdated')}
+					Last updated: January 1, 2025. Contact us at 
 					<Link href="/contacts" className="text-blue-500 hover:underline">
-						{t('contactLink')}
+						http://okitha.al@gmail.com
 					</Link>
 					.
 				</p>

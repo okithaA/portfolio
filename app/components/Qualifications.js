@@ -1,36 +1,21 @@
 import React from 'react'
-import { useTranslations } from 'next-intl';
 
 export default function Qualifications() {
-  const t = useTranslations('qualifications');
-
   const certs = [
-    { title: t('certificates.frontend.title'),
-      issuedBy : t('certificates.frontend.issuer')
-    },
-    { title: t('certificates.webdesign.title'),
-      issuedBy : t('certificates.webdesign.issuer')
-    },
-    { title: t('certificates.python.title'),
-      issuedBy : t('certificates.python.issuer')
-    },
-    { title: t('certificates.webdev.title'),
-      issuedBy : t('certificates.webdev.issuer')
-    },
-    { title: t('certificates.pythonEssentials.title'),
-      issuedBy : t('certificates.pythonEssentials.issuer')
-    },
-    { title: t('certificates.aiIntro.title'),
-      issuedBy : t('certificates.aiIntro.issuer')
-    }
-  ]
+    { title: 'Frontend Development Certificate', issuedBy: 'Coursera' },
+    { title: 'Web Design Certificate', issuedBy: 'Udemy' },
+    { title: 'Python Programming Certificate', issuedBy: 'edX' },
+    { title: 'Web Development Certificate', issuedBy: 'freeCodeCamp' },
+    { title: 'Python Essentials', issuedBy: 'Cisco' },
+    { title: 'Introduction to AI', issuedBy: 'Stanford Online' }
+  ];
 
   return (
     <div className="min-h-screen relative bg-white bg-cover bg-center bg-no-repeat px-6 py-12">
-      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">{t('Qualifications')}</h1>
+      <h1 className="text-6xl font-sans text-black font-light p-8 mb-4">Qualifications</h1>
 
       <p className="p-4 font-mono max-w-3xl text-black">
-        {t('Below are some of the certifications I have obtained, showcasing my commitment to continuous learning and professional development in the field of technology.')}
+        Below are some of the certifications I have obtained, showcasing my commitment to continuous learning and professional development in the field of technology.
       </p>
 
       <div className="max-w-3xl p-4 grid gap-4">

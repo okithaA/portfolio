@@ -1,11 +1,8 @@
 import Image from "next/image"
 import React from 'react'
 import Link from "next/link";
-import { useTranslations } from 'next-intl';
 
 export default function Header() {
-  const t = useTranslations('header');
-
   return (
     <main className="min-h-screen relative bg-black flex items-center justify-center px-6">
       {/* Subtle gradient accent */}
@@ -19,25 +16,25 @@ export default function Header() {
 
         {/* Left Content */}
         <div className="text-white px-4 md:px-0">
-          <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-6 font-semibold">{t('welcome')}</p>
+          <p className="text-sm uppercase tracking-[0.15em] text-slate-400 mb-6 font-semibold">Welcome</p>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white">
-            {t('Okitha Hettiarachchi')}
+            Okitha Hettiarachchi
           </h1>
-          <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">{t('Juniour Developer')}</p>
+          <p className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">Junior Developer</p>
 
           <p className="text-slate-300 max-w-lg leading-relaxed mb-8 text-lg">
-            {t('I craft accessible, performant web applications with meticulous attention to design and user experience. Mainly using React, Next.js, and modern JavaScript.')}
+            I craft accessible, performant web applications with meticulous attention to design and user experience. Mainly using React, Next.js, and modern JavaScript.
           </p>
 
           <div className="flex flex-wrap gap-4">
           <Link
             href="/resume.pdf"
             download
-            aria-label={t('downloadResume')}
+            aria-label="Download Resume"
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg
                transition-transform duration-300 shadow-lg hover:scale-110"
           >
-          {t('downloadResume')}
+          Download Resume
           </Link>
 
           <Link
@@ -46,7 +43,7 @@ export default function Header() {
                border border-slate-600 transition-transform duration-300
                hover:scale-110"
           >
-          {t('getInTouch')}
+          Get In Touch
          </Link>
         </div>
         </div>
