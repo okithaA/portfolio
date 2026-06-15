@@ -2,12 +2,11 @@ import React from 'react'
 
 export default function Qualifications() {
   const certs = [
-    { title: 'Frontend Development Certificate', issuedBy: 'Coursera' },
-    { title: 'Web Design Certificate', issuedBy: 'Udemy' },
-    { title: 'Python Programming Certificate', issuedBy: 'edX' },
-    { title: 'Web Development Certificate', issuedBy: 'freeCodeCamp' },
-    { title: 'Python Essentials', issuedBy: 'Cisco' },
-    { title: 'Introduction to AI', issuedBy: 'Stanford Online' }
+    { title: 'Frontend Development Certificate', issuedBy: 'Viduhala.lk(award-winning Sri Lankan EdTech startup)' },
+    { title: 'Introduction to Cybersecurity', issuedBy: 'Cisco' },
+    { title: 'Web Development Certificate', issuedBy: 'Viduhala.lk(award-winning Sri Lankan EdTech startup)' },
+    { title: 'Python Essentials 1', issuedBy: 'Cisco, in collaboration with the OpenEDG Python Institute' },
+    { title: 'Introduction to modern AI', issuedBy: 'Cisco' }
   ];
 
   return (
